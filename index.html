@@ -8,60 +8,79 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Harshavarthan Varatharajan</h1>
-        <p>Master's in Robotics | AI & Machine Learning Enthusiast</p>
+    <header id="main-header">
+        <h1 id="logo">Harshavarthan Varatharajan</h1>
+        <p>Master's in Robotics | AI & ML Enthusiast</p>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
+    <section id="about" class="fade-in">
         <h2>About Me</h2>
         <p>
-            I am a robotics master's student at the University of Maryland, College Park. 
-            Passionate about robotics, AI, and machine learning, I have worked on various projects in autonomous navigation, 
-            reinforcement learning, and semantic segmentation. My goal is to integrate AI into robotics for real-world applications.
+            I am a Robotics Master's student at the University of Maryland, College Park, 
+            specializing in **AI-driven robotic systems, motion planning, and reinforcement learning**.
+            I have experience working on **autonomous mobile robots, deep learning models, and simulation-based navigation**.
         </p>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming: Python, C++, JavaScript</li>
-            <li>AI & ML: PyTorch, TensorFlow, LSTMs, Reinforcement Learning</li>
-            <li>Robotics: ROS2, SLAM, Path Planning, Motion Control</li>
-            <li>Hardware: Arduino, Raspberry Pi, TurtleBot</li>
-            <li>Web: HTML, CSS, JavaScript</li>
-        </ul>
+    <section id="skills" class="fade-in">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill"><img src="images/ros.png" alt="ROS"><p>ROS / ROS2</p></div>
+            <div class="skill"><img src="images/pytorch.png" alt="PyTorch"><p>PyTorch</p></div>
+            <div class="skill"><img src="images/opencv.png" alt="OpenCV"><p>OpenCV</p></div>
+            <div class="skill"><img src="images/python.png" alt="Python"><p>Python</p></div>
+            <div class="skill"><img src="images/gazebo.png" alt="Gazebo"><p>Gazebo</p></div>
+            <div class="skill"><img src="images/tensorflow.png" alt="TensorFlow"><p>TensorFlow</p></div>
+        </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="fade-in">
         <h2>Projects</h2>
         <div class="project">
-            <h3>TurtleBot Autonomous Navigation</h3>
-            <p>Developed a ROS-based navigation system using SLAM and path planning to autonomously navigate through waypoints.</p>
+            <img src="images/rl_project.jpg" alt="RL Manipulator">
+            <div class="project-info">
+                <h3><a href="rl_project.html">Reinforcement Learning & LLM for Mobile Manipulator</a></h3>
+                <p>Developed an RL-based control system for a mobile manipulator using PPO, SAC, and GPT-4.</p>
+            </div>
         </div>
         <div class="project">
-            <h3>Machine Learning for Robotics</h3>
-            <p>Implemented LSTM-based models for trajectory prediction and obstacle avoidance in robotic systems.</p>
+            <img src="images/dijkstra.jpg" alt="Dijkstra Algorithm">
+            <div class="project-info">
+                <h3><a href="dijkstra.html">Optimized Pathfinding with Dijkstra Algorithm</a></h3>
+                <p>Implemented Dijkstra’s Algorithm to visualize robotic pathfinding and navigation.</p>
+            </div>
         </div>
         <div class="project">
-            <h3>Semantic Segmentation with U-Net</h3>
-            <p>Built a deep learning model for pixel-wise classification of images to enhance robotic vision capabilities.</p>
+            <img src="images/amr.jpg" alt="AMR Akio Mini">
+            <div class="project-info">
+                <h3><a href="akio_mini.html">Autonomous Mobile Robot - Akio Mini</a></h3>
+                <p>Designed a fully autonomous mobile robot with LiDAR-based SLAM and ROS2 integration.</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="research" class="fade-in">
+        <h2>Research</h2>
+        <div class="research">
+            <h3><a href="https://arxiv.org/abs/2409.17262" target="_blank">CROSS-GAiT: Terrain-Adaptive Gait Learning</a></h3>
+            <p>Developed an AI-driven **quadruped terrain navigation system**, improving adaptability and efficiency.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">linkedin.com/in/your-linkedin</a></p>
+        <p>Email: <a href="mailto:harshav@umd.edu">harshav@umd.edu</a></p>
+        <p>GitHub: <a href="https://github.com/your-username">github.com/your-username</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/HarshavarthanV/" target="_blank">linkedin.com/in/HarshavarthanV</a></p>
     </section>
 
     <footer>
