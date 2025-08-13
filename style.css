@@ -1,97 +1,42 @@
+/* 1) Global text color: make it light on a dark bg */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: url('images/background.jpg') no-repeat center center/cover;
-    color: #000 !important;
+    color: #fff; /* was #000 !important */
     text-align: center;
 }
 
-header {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    transition: 0.4s;
-}
-
-#logo {
-    font-size: 24px;
-    font-weight: bold;
-    position: absolute;
-    left: 20px;
-    top: 15px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: right;
-    margin-right: 20px;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: cyan;
-}
-
+/* 2) Make all content sections dark */
 section {
     padding: 100px 50px;
+    background: #000;              /* solid black (or try rgba(0,0,0,0.85)) */
+    color: #fff;                   /* ensure readable text */
+    scroll-margin-top: 90px;       /* smooth in-page anchor offset for fixed header */
 }
 
+/* 3) Cards on dark: subtle glass effect instead of white tint */
 .project, .research {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 20px auto;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.06); /* was 0.1 white tint */
+    backdrop-filter: blur(2px);
     padding: 20px;
     border-radius: 10px;
     width: 80%;
+    color: #fff;
 }
 
-.project img {
-    width: 150px;
-    border-radius: 10px;
-    margin-right: 20px;
-}
+/* 4) Optional: ensure links stay readable on dark sections */
+nav ul li a { color: #fff; }
+nav ul li a:hover { color: cyan; }
 
-.skills-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.skill {
-    margin: 15px;
-    text-align: center;
-}
-
-.skill img {
-    width: 50px;
-}
-
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease-out;
-}
-
+/* 5) Footer already dark; keep text light */
 footer {
-    background-color: black;
+    background-color: #000;
+    color: #fff;
     padding: 10px;
 }
